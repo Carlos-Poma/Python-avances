@@ -5,7 +5,7 @@ Gran parte del contenido esta imcompleto ya que comence a hacer la carpeta cuand
 conociemto de algunos temas como: variables, operadores, aritmeticos, condiciones
 ### Datos basicos de los siguientes temas:
 - Funciones
-- Variables
+- Variables (un poco avanzadas)
 - Metodos de cadenas
 - Metodos de listas
 - Metodos de diccionarios
