@@ -3,14 +3,16 @@
 #ejemplo: es_palindromo ("radar") tendría que devolver True.
 
 def es_palindromo(palabra):
-    lista_invertida = []
-    lista_palabra = []
-    for letra in palabra:lista_invertida.append(letra)
-    
-    lista_palabra = lista_invertida.reverse()
-    longitud = len(palabra)
-    for rango in range(0,longitud):
-        if lista_palabra[rango] != lista_invertida[rango]: return False
-    return lista_palabra
-    
-print(es_palindromo("hola"))
+    palindromo,palindromo_invertido,i = [],[],0
+    for letra in palabra : 
+        palindromo_invertido.append(letra)
+        palindromo.append(letra)
+    palindromo_invertido.reverse()
+    while i != len(palabra):
+        if palindromo[i] == palindromo_invertido[i]:
+            if i + 1 == len(palabra):return True
+        i+=1
+    return False
+
+resultado = es_palindromo("radar")
+print(resultado)
