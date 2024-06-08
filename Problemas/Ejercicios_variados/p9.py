@@ -4,11 +4,7 @@
 # ****
 # *********
 # *******
-def generar_n_caracteres(entero,n):
-    caracteres = ""
-    for num in range(entero):caracteres+=n
-    return caracteres
-
+generar_n_caracteres = lambda entero,n: entero*n
 def procedimiento(lista):
     for elemento in lista :
       histograma = generar_n_caracteres(elemento,"*")
